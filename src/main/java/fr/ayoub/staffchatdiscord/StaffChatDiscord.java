@@ -66,7 +66,7 @@ public final class StaffChatDiscord extends JavaPlugin {
                 }
             if (check) {
                 try {
-                    jda = JDABuilder.create(token, Arrays.asList(GatewayIntent.GUILD_MEMBERS, GatewayIntent.MESSAGE_CONTENT)).disableCache(CacheFlag.ACTIVITY, CacheFlag.VOICE_STATE, CacheFlag.EMOJI, CacheFlag.STICKER, CacheFlag.CLIENT_STATUS, CacheFlag.ONLINE_STATUS, CacheFlag.SCHEDULED_EVENTS).build();
+                    jda = JDABuilder.create(token, Arrays.asList(GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_MEMBERS, GatewayIntent.MESSAGE_CONTENT)).disableCache(CacheFlag.ACTIVITY, CacheFlag.VOICE_STATE, CacheFlag.EMOJI, CacheFlag.STICKER, CacheFlag.CLIENT_STATUS, CacheFlag.ONLINE_STATUS, CacheFlag.SCHEDULED_EVENTS).build();
                     jda.addEventListener(new GuildReceive());
                     PluginManager pluginManager = Bukkit.getPluginManager();
                     pluginManager.registerEvents(new Chat(), this);
