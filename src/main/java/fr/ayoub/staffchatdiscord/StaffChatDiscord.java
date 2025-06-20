@@ -62,6 +62,7 @@ public final class StaffChatDiscord extends JavaPlugin {
                 textchannel = fileConfiguration.getString("textchannel");
                 if (textchannel == null || textchannel.isEmpty()) {
                     logger.warning("In config.yml, the textchannel is empty!");
+                    check = false;
                 }
             if (check) {
                 try {
