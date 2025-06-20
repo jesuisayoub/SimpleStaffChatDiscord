@@ -1,0 +1,27 @@
+## SimpleStaffChat Discord
+# Thank you for downloading this plugin. This plugin was made for creators who need simple functionality
+# that is easy to install and use.
+
+# I'm an independent developer who doesn't make any money from this plugin. If you like it, please support me!
+# https://www.paypal.com/paypalme/aybuild
+
+# Command in Minecaft Server:
+# /staffchat or /sc
+# /staffchat : Enable ou disable the staffchat mode. This feature allows you to speak freely in the staff chat without having to rewrite the command
+# /staffchat <message> : Send a message only to trusted players
+
+# Permission : staffchat.use
+
+# In this configuration file only 3 parameters will need to be configured.
+# To connect your Discord bot, you need to provide this token which you can find here https://discord.com/developers/applications/
+# When creating your bot, don't forget to enable Message Content Intent and Server Members Intent to ensure you don't have any problems.
+tokenbot:
+
+# The webhook here will allow you to send messages from the Minecraft server to the desired Discord channel.
+# To create a webhook in a channel, go to the channel settings then "Integrations" > "Webhooks" > "New Webhook"
+# then click on the link that provides you and enter it below
+webhook:
+
+# Enter the Discord channel ID, which will allow trusted players to chat on the Minecraft server directly from this Discord channel.
+# To retrieve a channel ID, enable the developer function on Discord, then right-click on the channel and copy the ID.
+textchannel:

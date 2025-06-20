@@ -1,0 +1,8 @@
+name: SimpleStaffChatDiscord
+version: '${project.version}'
+main: fr.ayoub.staffchatdiscord.StaffChatDiscord
+api-version: '1.21'
+commands:
+  staffchat:
+    description: Staffchat
+    aliases: sc
